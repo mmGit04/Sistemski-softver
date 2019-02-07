@@ -1,0 +1,16 @@
+#ifndef ENUMS_H
+#define ENUMS_H
+
+enum ScopeType {GLOBAL,LOCAL};
+enum SectionType {START,TEXT,DATA,BSS,RODATA,UND};
+enum TokenType { LABEL,SECTION,EXT_GLB,INSTRUCTION,INCORECT,DIRECTIVE,SYMBOL,OP_DEC,OP_SYM_VALUE,END};
+enum InstuctionName {ADD,SUB,MUL,DIV,CMP,AND,OR,NOT,TEST,PUSH,POP,CALL,IRET,MOV,SHL,SHR,RET,JMP};
+enum InstructionCond {EQ,NE,GT,AL};
+enum RelocationType {ABS,PCREL};
+enum AddressingType {IMM,MEM,REG_DIR,REG_IND_POM,PC_POM};
+
+
+
+
+
+#endif
