@@ -1,0 +1,41 @@
+#Tabela Simbola
+Ime Simbola |Sekcija |Offset |Scope |Tip simbola | Size|Number
+.bss|bss|0|L|section|13|1
+.data|data|0|L|section|8|2
+.text|text|0|L|section|124|3
+START|text|48|G|label|0|4
+a|data|0|G|label|0|5
+b|data|2|G|label|0|6
+c|bss|0|G|label|0|7
+d|bss|5|G|label|0|8
+incorect|text|32|G|label|0|9
+keyboard|text|38|G|label|0|10
+pom|text|84|G|label|0|11
+reset|text|0|G|label|0|12
+timer|text|26|G|label|0|13
+#end Symbol Table
+#.ret.data
+#offset  |  tip  |  vr[.data]:
+#end
+
+#.data
+0A 00 0F 00 08 00 10 00 
+#end
+
+#.ret.text
+#offset  |  tip  |  vr[.text]:
+56|R_386_32|5
+60|R_386_32|5
+68|R_386_32|5
+80|R_386_32|11
+96|R_386_32|7
+108|R_386_32|2
+112|R_386_32|2
+120|R_386_32|7
+#end
+
+#.text
+F5 00 00 00 F5 20 00 00 F5 40 00 00 F5 60 00 00 F5 80 00 00 F5 A0 00 00 F0 00 F5 A0 0D 00 F0 00 F5 00 01 00 F0 00 F5 10 FC FF F6 08 FE FF F0 00 F5 09 C1 20 0F 00 C1 30 00 00 F5 60 00 00 C1 9B 02 00 F6 0D 00 00 F5 40 04 00 F7 6A 02 00 EC 00 00 00 E9 E0 F5 20 0F 00 C1 89 F9 80 11 00 F6 0C 00 00 F5 40 05 00 F5 20 02 00 F6 09 04 00 F5 20 04 00 F7 2A 02 00 C6 0A 00 00 E9 E0 
+#end
+
+.END

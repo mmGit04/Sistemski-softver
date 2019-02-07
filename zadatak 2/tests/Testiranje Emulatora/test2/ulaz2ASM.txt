@@ -1,0 +1,10 @@
+.global pom
+
+.text
+	pom: 
+		shl r0,16
+		mov r1,4
+		shr r1,2
+		ret 
+	
+.end

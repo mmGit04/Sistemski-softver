@@ -1,0 +1,31 @@
+#Tabela Simbola
+Ime Simbola |Sekcija |Offset |Scope |Tip simbola | Size|Number
+.data|data|0|L|section|4|3
+.text|text|0|L|section|36|1
+START|text|0|G|label|0|2
+a|data|0|G|label|0|4
+b|data|2|G|label|0|5
+pom|UND|0|G|symbol|0|6
+und|UND|0|L|section|0|0
+#end Symbol Table
+#.ret.data
+offset  |  tip  |  vr[.data]:
+#end
+
+#.data
+0A 00 0F 00 
+#end
+
+#.ret.text
+offset  |  tip  |  vr[.text]:
+8|R_386_32|4
+12|R_386_32|4
+20|R_386_32|4
+32|R_386_32|6
+#end
+
+#.text
+F5 09 C1 20 0F 00 C1 30 00 00 F5 60 00 00 C1 9B 02 00 F6 0D 00 00 F5 40 04 00 F7 6A 02 00 EC 00 00 00 E9 E0 
+#end
+
+.END

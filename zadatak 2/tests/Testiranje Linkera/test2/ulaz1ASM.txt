@@ -1,0 +1,29 @@
+.global a,c,j,g
+
+.text
+
+p:	add r0,&b 
+	jmp $f
+	sub d,r1
+f:  mul r3,&a
+	div r3,&g
+
+
+.rodata
+a: .word 1,2
+b: .char 3
+.data
+
+c: .align 4
+ .word 5
+d: .long 6
+
+.bss
+j: .skip 10
+e: .align 2
+.end
+
+
+
+
+

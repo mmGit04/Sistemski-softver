@@ -1,0 +1,26 @@
+.global a1,c1,j1,g,START,a
+
+.text
+p1: add r0,&a1
+	add r1,&b1
+	jmp $a
+	jmp $d1
+		
+START: add r0,r1
+.rodata
+a1: .word 11,12
+b1: .char 31
+
+.data
+c1: .align 4
+g: .word 51
+d1: .long 61
+
+.bss
+j1: .skip 10
+e1: .align 2
+
+.end
+
+
+

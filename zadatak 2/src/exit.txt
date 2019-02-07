@@ -1,0 +1,22 @@
+#Tabela Simbola
+Ime Simbola |Sekcija |Offset |Scope |Tip simbola | Size|Number
+.text|text|0|L|section|134|1
+START|text|48|G|label|0|2
+incorect|text|32|G|label|0|3
+keyboard|text|38|G|label|0|4
+pom|text|120|G|label|0|5
+reset|text|0|G|label|0|6
+timer|text|26|G|label|0|7
+#end Symbol Table
+#.ret.text
+#offset  |  tip  |  vr[.text]:
+74|R_386_32|1
+82|R_386_32|1
+116|R_386_32|5
+#end
+
+#.text
+F5 00 00 00 F5 20 00 00 F5 40 00 00 F5 60 00 00 F5 80 00 00 F5 A0 00 00 F0 00 F5 A0 0D 00 F0 00 F5 00 01 00 F0 00 F5 10 FC FF F6 08 FE FF F0 00 F5 00 05 00 C1 00 06 00 C5 00 02 00 C9 00 04 00 CD 00 05 00 D1 00 00 00 B5 E0 54 00 F5 40 07 00 F5 E0 58 00 F5 40 08 00 F5 80 06 00 D5 80 07 00 E1 80 09 00 35 80 03 00 D9 80 08 00 75 80 0A 00 DD 8A EC 00 00 00 E9 E0 F9 00 10 00 F5 20 04 00 FD 20 02 00 E9 E0 
+#end
+
+.END

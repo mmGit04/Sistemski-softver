@@ -1,0 +1,16 @@
+#Tabela Simbola
+Ime Simbola |Sekcija |Offset |Scope |Tip simbola | Size|Number
+.text|text|0|L|section|14|1
+pom|text|0|G|label|0|2
+und|UND|0|L|section|0|0
+#end Symbol Table
+#.ret.text
+offset  |  tip  |  vr[.text]:
+#end
+
+#.text
+F9 00 10 00 F5 20 04 00 FD 20 02 00 E9 E0 
+#end
+
+.END
+

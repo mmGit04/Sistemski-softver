@@ -1,0 +1,50 @@
+#Tabela Simbola
+Ime Simbola |Sekcija |Offset |Scope |Tip simbola | Size|Number
+.bss|bss|0|L|section|8|10
+.data|data|0|L|section|28|4
+.rodata|rodata|0|L|section|2|8
+.text|text|0|L|section|64|1
+a|text|0|L|label|0|2
+c|text|42|L|label|0|3
+d|data|13|G|label|0|6
+dataLabela|data|0|L|label|0|5
+e|data|24|L|label|0|7
+k|bss|0|L|label|0|11
+m|UND|0|G|symbol|0|12
+s|rodata|0|L|label|0|9
+und|UND|0|L|section|0|0
+#end Symbol Table
+#.ret.data
+#offset  |  tip  |  vr[.data]:
+#end
+
+#.data
+01 02 03 00 00 00 00 00 00 00 00 00 00 60 E3 16 00 0B 00 00 00 00 00 00 06 00 07 00 
+#end
+
+#.ret.rodata
+#offset  |  tip  |  vr[.rodata]:
+#end
+
+#.rodata
+04 05 
+#end
+
+#.ret.text
+#offset  |  tip  |  vr[.text]:
+8|R_386_32|4
+12|R_386_32|1
+16|R_386_32|12
+24|R_386_32|1
+36|R_386_32|12
+46|R_386_32|6
+52|R_386_32|4
+62|R_386_32|1
+#end
+
+#.text
+C1 20 0A 00 C1 2A C3 89 18 00 C1 40 2A 00 C1 40 00 00 C5 5B 0B 00 CA 09 2A 00 CE  08 14 00 D3 6B 0A 00 D5 3D 00 00 D9 90 1E 00 DD 2C E6 00 00 00 E9 40 F9 90 18 00 
+FE 09 15 00 F0 00 EE 00 2A 00 
+#end
+
+.END

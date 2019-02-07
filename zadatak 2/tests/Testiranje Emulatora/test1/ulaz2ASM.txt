@@ -1,0 +1,25 @@
+.global pom,c,d
+.text 
+
+
+pom: 
+	mov r1,15
+	add r4,r1
+	shl r4,17
+	mov c,r4 
+	mov r2,5
+	mov r1,2
+	mov s,r1
+	mov r1,&s
+	
+	mov r1[2],r2
+	sub c,r2
+	ret 
+	
+.data
+s: .word 8
+k: .word 16
+.bss
+c: .skip 5
+d: .skip 8
+.end

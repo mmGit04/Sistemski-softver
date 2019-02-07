@@ -1,0 +1,20 @@
+.global START,a,b,pom
+
+.text
+
+START: 
+	mov r0,r1
+	add r1,15
+	add r1,a 
+	mov r3,&a
+	add r4,r3[2]
+	mov a,r5
+	mov r2,4
+	mov r3[2],r2
+	call &pom
+	ret
+.data
+a: .word 10
+b: .word 15
+
+.end

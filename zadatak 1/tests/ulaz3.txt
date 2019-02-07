@@ -1,0 +1,51 @@
+
+.global d,m
+.text
+a:
+
+ add r1,10
+ add r1,r2
+ add r4[e],r1
+ add r2,&c
+ add r2,&m
+ sub r2,r3[11]
+ mul c,r1
+ div *20,r0
+ cmp r3[10],r3
+ and r1,r5[m]
+ or r4,*30
+c: 
+ not r1,r4
+
+ push d
+ pop r2
+ shl r4,e
+ shr *21,r1
+ iret
+ call c
+
+
+.data
+dataLabela: .char 1,2,3
+.skip 10
+
+d: 
+.long 1500000,11
+.align 4
+
+e:
+ .word 6,7
+
+.rodata
+s: .char 4,5
+
+
+.bss
+k: .skip 8
+.align 4
+
+.end
+
+
+
+
